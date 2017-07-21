@@ -8,8 +8,7 @@ require_once 'PHPUnit/Extensions/SeleniumTestCase.php';
  * @package   Turing
  * @copyright 2012-2016 silverorange
  */
-abstract class TuringSeleniumTest
-	extends PHPUnit_Extensions_SeleniumTestCase
+abstract class TuringSeleniumTest extends PHPUnit_Extensions_SeleniumTestCase
 {
 	// {{{ protected properties
 
@@ -25,7 +24,8 @@ abstract class TuringSeleniumTest
 		$name = null,
 		array $data = array(),
 		$data_name = ''
-	) {
+	)
+	{
 		parent::__construct($name, $data, $data_name);
 		$this->config = $this->getConfig();
 	}
